@@ -32,7 +32,7 @@ std::string Partie::getLastAiMove(){
 std::string Resultat(std::string PlayerMove, std::string AiMove){
 	if(PlayerMove==AiMove)
 		return "draw";
-	if((PlayerMove=="rock" and AiMove=="scissor") or (PlayerMove=="paper" and AiMove=="Rock") or (PlayerMove=="scissor" and AiMove=="paper"))
+	if((PlayerMove=="rock" and AiMove=="scissor") or (PlayerMove=="paper" and AiMove=="rock") or (PlayerMove=="scissor" and AiMove=="paper"))
 		return "win";
 	return "loss";
 }	
